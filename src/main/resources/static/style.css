@@ -1,0 +1,144 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #1a73e8;
+}
+
+.add-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border 0.2s;
+}
+
+.add-task input:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+.add-task button {
+    margin-left: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1a73e8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-task button:hover {
+    background-color: #1669c1;
+}
+
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    transition: transform 0.1s;
+}
+
+.task:hover {
+    transform: translateY(-1px);
+}
+
+.task input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    padding: 6px 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.task-buttons button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: background 0.2s;
+}
+
+.task-buttons button.update {
+    background-color: #28a745;
+}
+
+.task-buttons button.update:hover {
+    background-color: #218838;
+}
+
+.task-buttons button.delete {
+    background-color: #dc3545;
+}
+
+.task-buttons button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .add-task {
+        flex-direction: column;
+    }
+    .add-task button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .task-buttons {
+        margin-top: 8px;
+    }
+}
+
