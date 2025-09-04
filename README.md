@@ -1,4 +1,4 @@
-# Task Manager - Spring Boot REST API Project
+# Task Manager - Java (Spring Boot) REST API Project
 
 ## Project Description
 This project is a simple **Task Manager** application built with **Java Spring Boot**. The goal of this project was to learn how to build and interact with **REST APIs**, understand the fundamentals of **Spring Boot**, and implement a full **CRUD** backend.  
