@@ -60,7 +60,10 @@ This structure closely mirrors **C# / .NET** backend development using models, r
 The project includes a simple **HTML, CSS, and JavaScript frontend** to interact with the backend APIs:
 
 - Display tasks dynamically  
-- Add, update, and delete tasks through API calls  
+- Add, update, and delete tasks through API calls
+
+<img width="607" height="465" alt="image" src="https://github.com/user-attachments/assets/3ce54da0-31b7-426c-ab3e-74ca02ddbb5a" />
+
 
 ---
 
